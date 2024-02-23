@@ -1,0 +1,60 @@
+#shop{
+    columns:2;
+    width: auto;
+   
+}
+i#icon{
+    font-size: 22px; /* ขนาดไอคอน */
+    margin: 10px; /* ระยะห่างระหว่างไอคอน */
+}
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+  }
+  nav.categiroes div {
+    /* Make the navigation bar width 80% of viewport and align in the center with no padding */
+    width: 80%;
+    margin: 0 auto;
+  }
+  .container {
+  
+    display: flex;
+  }
+  .flex_item {
+    
+    flex: auto;
+    margin: 0 10px; 
+  }
+   .categiroes a:link,
+  .categiroes a:visited {
+    background-color: #cfa716;
+    margin: 20px;
+    color: #fff;
+    padding: 0.5em;
+    display: inline-block;;
+  }
+  .large {
+    /* Disable images when viewport is smaller than 600px */
+    display: none;
+  }
+  @media only screen and (min-width: 600px) {
+    /* Set styling when viewport is at least 600px */
+    .small {
+      /* Disable text links */
+      display: none;
+    }
+    .large {
+      /* Enable image links */
+      display: inline-block;
+    }
+    img {
+      /* set image width to be resizable when viewport size is adjusted */
+      width: 100%;
+      height: auto;
+      border-radius: 0.5em;
+    }
+  
+  }
