@@ -28,14 +28,18 @@ body {
     flex: auto;
     margin: 0 10px; 
   }
-   .categiroes a:link,
+
+  
+  .categiroes a:link,
   .categiroes a:visited {
     background-color: #cfa716;
     margin: 20px;
     color: #fff;
     padding: 0.5em;
-    display: inline-block;;
+    display: inline-block;
+    border-radius: 50%; /* ปรับเป็นวงกลม */
   }
+  
   .large {
     /* Disable images when viewport is smaller than 600px */
     display: none;
@@ -58,3 +62,4 @@ body {
     }
   
   }
+  
