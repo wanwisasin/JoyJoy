@@ -1,0 +1,90 @@
+#shop{
+    columns:2;
+    width: auto;
+   
+}
+i#icon{
+    font-size: 22px; /* ขนาดไอคอน */
+    margin: 10px; /* ระยะห่างระหว่างไอคอน */
+}
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div {
+    flex: 0 0 auto;
+    width: 30%; /* ปรับขนาดของคอลัมน์ตามที่คุณต้องการ */
+}
+
+.container div img {
+    width: 100%;
+    height: auto;
+}
+
+.item-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: calc(33.333% - 20px); /* ปรับขนาดของแต่ละ card ให้มีขนาดเท่ากับ 1/3 ของ container และลบระยะห่างรอบรูปออก (20px) */
+    margin: 10px; /* ระยะห่างรอบรูปภาพ */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container div {
+    margin-right: 20px;
+}
+
+p {
+    padding: 0px;
+    font-size: 14px; /* ปรับขนาดข้อความให้เล็กลง */
+}
+
+.available-now {
+    font-size: 12px; /* ปรับขนาดข้อความ Available now ให้เล็กลง */
+    color: rgb(81, 222, 81); /* เปลี่ยนสีข้อความเป็นสีเขียว */
+}
+.buyquantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333
+    
+}
+
+
+.btnc {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+
+
+
+  
