@@ -28,6 +28,55 @@ body {
     flex: auto;
     margin: 0 10px; 
   }
+  /*eng*/
+  section.categiroes {
+    margin-top: 52px;
+    border: 1px solid red;
+  }
+  .col p{
+    margin-left: 10px;
+  }
+  section.toppicks {
+    margin-top: 90px;
+    border: 1px solid red;
+  }
+  .boxback1 {
+    height: 370px;
+    width: 398px;
+    margin-top: 70px;
+    margin-left: 79px;
+    margin-right: 38px;
+    display: inline-block;
+    background-color: #24ea80;
+    border: 1px solid red;
+  }
+  .boxback2 {
+    height: 370px;
+    width: 398px;
+    margin-top: 70px;
+    margin-right: 38px;
+    display: inline-block;
+    background-color: #24ea80;
+    border: 1px solid red;
+  }
+  .boxback3 {
+    height: 370px;
+    width: 398px;
+    margin-top: 70px;
+    margin-right: 79px;
+    display: inline-block;
+    background-color: #24ea80;
+    border: 1px solid red;
+  }
+  .boxback3 img {
+    margin-top: 40px;
+  }
+  section.discounted {
+    margin-top: 90px;
+    border: 1px solid red;
+  }
+
+  /*eng*/
 
   
   .categiroes a:link,
