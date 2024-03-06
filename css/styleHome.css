@@ -36,7 +36,6 @@ body {
     font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
     margin: 0;
   }
-  
   .container {
     display: flex;
   }
@@ -51,9 +50,8 @@ body {
     margin-left: 20px; 
   }
   body .navbar.navbar-expand-lg.bg-body-tertiary {
-    background-color: #F4F1DE !important; 
+    background-color: #f2cc8f37 !important; 
   }
-
 
   /*categiroes*/
   nav.categiroes div {
@@ -186,28 +184,69 @@ body {
     margin-bottom: 200px;
   }
   
- 
+  /* footer */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  footer .col {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  footer .col {
+    text-align: center;
+  }
   
+  li {
+    list-style-type: none;
+  }
+
+  h5 {
+    margin-left: 17px;
+  }
+
+  .d-flex {
+    margin-left: 17px;
+  }
+  
+  section.footer {
+    background-color: #ffffff;
+  }
+ 
+/*   
   .large {
-    /* Disable images when viewport is smaller than 600px */
     display: none;
   }
   @media only screen and (min-width: 600px) {
-    /* Set styling when viewport is at least 600px */
     .small {
-      /* Disable text links */
       display: none;
     }
     .large {
-      /* Enable image links */
       display: inline-block;
     }
     img {
-      /* set image width to be resizable when viewport size is adjusted */
       width: 100%;
       height: auto;
       border-radius: 0.5em;
     }
   
-  }
+  } */
   
