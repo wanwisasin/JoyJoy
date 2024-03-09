@@ -1,90 +1,367 @@
+/* font */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar,
+.navbar-nav,
+.navbar-toggler-icon,
+.nav-link,
+.form-control,
+.btn,
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+h3,
+.boxback,
+.white-box,
+footer,
+ul,
+li,
+i {
+  font-family: 'Montserrat', sans-serif;
+}
+/* navbar */
 #shop{
     columns:2;
     width: auto;
    
 }
 i#icon{
-    font-size: 22px; /* ขนาดไอคอน */
-    margin: 10px; /* ระยะห่างระหว่างไอคอน */
+    font-size: 22px; 
+    margin: 10px; 
 }
 body {
     background-color: #fff;
     color: #333;
     font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
-    padding: 1em;
     margin: 0;
   }
 
   .container {
     display: flex;
-    justify-content: space-between;
-}
+  }
+  .col p {
+    margin-left: 10px;
+  }
+  .flex_item {
+    flex: auto;
+    margin: 0 10px; 
+  }
+  .nar-logo {
+    margin-right: 20px; 
+  }
+  .nav-item:not(:first-child) {
+    margin-left: 20px; 
+  }
+  body .navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: #f2cc8f37 !important; 
+  }
 
-.container div {
-    flex: 0 0 auto;
-    width: 30%; /* ปรับขนาดของคอลัมน์ตามที่คุณต้องการ */
-}
-
-.container div img {
-    width: 100%;
-    height: auto;
-}
-
-.item-1 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card {
-    flex: 0 0 auto;
-    width: calc(33.333% - 20px); /* ปรับขนาดของแต่ละ card ให้มีขนาดเท่ากับ 1/3 ของ container และลบระยะห่างรอบรูปออก (20px) */
-    margin: 10px; /* ระยะห่างรอบรูปภาพ */
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
+/*div สินค้า*/
 .container {
+    width: 100%;
     display: flex;
-    align-items: center;
-}
+  }
+ /*รูปภาพรีวิว 3 รูป*/
+  .col1 {
+    width: 20%; 
+  }
 
-.container div {
-    margin-right: 20px;
-}
-
-p {
-    padding: 0px;
-    font-size: 14px; /* ปรับขนาดข้อความให้เล็กลง */
-}
-
-.available-now {
-    font-size: 12px; /* ปรับขนาดข้อความ Available now ให้เล็กลง */
-    color: rgb(81, 222, 81); /* เปลี่ยนสีข้อความเป็นสีเขียว */
-}
-.buyquantity {
+  .box1 {
+    width: 180px;
+    height: 180px;
+    background-color: #f2cc8f69;
+    margin: 10px;
     display: flex;
-    align-items: center;
-    border: 1px solid #333
+    justify-content: center;
+  
+  }
+  .box1 img {
+    margin: 5px;
+    width: 165px;
+    height: 165px;
+    cursor: pointer;
+  }
+   /*รูปภาพสินค้า*/
+  .col2 {
+    width: 40%; 
+    position: relative; 
+    overflow: hidden; 
+    
+  }
+  .box2 {
+    width: 420px;
+    height: 420px;
+    background-color: #f2cc8f69;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .box2 img {
+    margin-top: 30px;
+    width: 350px;
+    height: 350px;
+ 
+  }
+
+  /*div ลูกศรซ้ายขวา*/
+  .arrow {
+    justify-self: end; 
+    align-self: end; 
+    display: flex; 
+    justify-content: flex-end; /* ย้ายไอคอนไปทางขวา */
+    position: absolute; /* ตั้งให้ div.arrow เป็นแบบ absolute */
+    top: 430px; /* จัดให้ตัวอ้างอิงที่บนสุด */
+    right: 10px; /* จัดให้ตัวอ้างอิงที่ขวาสุด */
     
 }
+/*ปรับแต่งไอคอน*/
+.left,
+.right {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    background-color: #fff; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
 
+.right {
+    margin-right: 100px;
+    margin-left: 10px; 
+}
 
-.btnc {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+ 
+   /*ชื่อ รายละเอียด ราคาสินค้า*/
+  .col3 {
+    width: 40%; 
+  }
+
+  .box3 {
+    width: 420px;
+    margin-top: 60px;
+    position: relative; /
+  }
+  .detail {
+    margin-top: 30px;
+    width: 350px;
+  }
+  .detail p{
+    margin-top: -10px;
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 30px; 
+  }
+  .available-now {
+    font-size: 18px; 
+    color: rgb(81, 222, 81); 
+    margin-top: -10px;
+}
+
+/*Quantity*/
+
+  .wishlist {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    margin-top: 20x;
+    margin-right: 20px;
+    background-color: #EFEEEE; 
+    position: absolute; 
+    top: 0; /* ชิดด้านบน */
+    right: 0; /* ชิดด้านขวา */
+  }
+
+  .wishlist #icon {
+    display: flex; /* ใช้ Flexbox เพื่อจัดวาง */
+    justify-content: center; /* จัดเรียงสิ่งของในแนวนอนตรงกลาง */
+    align-items: center; /* จัดเรียงสิ่งของในแนวตั้งตรงกลาง */
+    cursor: pointer; 
+  }
+
+  h3 {
+    font-size: 18;
+  }
+
+  /*div quantity*/
+  .quantity {
+    margin-top: 20px;
+    display: flex;
+    align-items: center; /* จัดวางแนวตั้งตามกลาง */
+   
+  }
+  .buyquantity {
+    width: 120px;
+    height: 40px;
+    left: 60px;
+    border-radius: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #333;
+    border: 1px solid #7E7E7E;
     cursor: pointer;
+    margin-left: 20px; /* ระยะห่างซ้ายของ buyquantity */
+    margin-bottom: 10px;
+}
+  
+  /*button click*/
+  .addtobag {
+    margin-top: 50px;
+    width: 360px;
+    height: 60px;
+    font-size: 28px;
+    background-color: #fff; 
+    color: #000000; 
+    position: absolute;
+    border: 1px solid #D9D9D9;
+    border-radius: 25px; /* เพิ่มขอบมนเหลี่ยม */
+    cursor: pointer; /* เปลี่ยนเป็น cursor แสดงการคลิก */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+  }
+  .container-other {
+    margin-top: 60px;
+    
+  }
+
+/*section toppicks*/
+.container-top {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 60px;
+  /* margin-bottom: 200px; */
 }
 
+.boxback {
+    position: relative;
+    height: 420px;
+    width: 420px;
+    display: inline-block;
+    background-color: #D9D9D9;
+  }
 
+  .boxback img {
+    margin-top: 50px;
+    margin-left: 15px;
+    height: 350px;
+    width: 350px;
+  }
+  
 
+  .wishlist1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* ทำให้กล่องเป็นวงกลม */
+    margin-top: 15px;
+    background-color: #EFEEEE; /* เพิ่มสีพื้นหลังตามต้องการ */
+    position: absolute; /* ตั้งตำแหน่งแบบอย่างยืดหยุ่น */
+    top: 0; /* ชิดด้านบน */
+    left: 15px; 
+  }
+
+  .wishlist1 #icon {
+    display: flex; /* ใช้ Flexbox เพื่อจัดวาง */
+    justify-content: center; /* จัดเรียงสิ่งของในแนวนอนตรงกลาง */
+    align-items: center; /* จัดเรียงสิ่งของในแนวตั้งตรงกลาง */
+    cursor: pointer; /* เปลี่ยนเป็น cursor แสดงการคลิก */
+  }
+
+  .boxback p {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 70px;
+    position: absolute; 
+    top: 0; 
+    
+  }
+  .white-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px; 
+    height: 40px; 
+    background-color: #fff; 
+    z-index: 1; 
+  }
+  .white-box p {
+    /* text-align: center; */
+    right: 10px;
+    margin-top: 3px;
+    font-weight: 550;
+    font-size: 24px;
+    
+  }
+  .container-boxtext {
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  .box-text {
+    height: 90px;
+    width: 398px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .box-text p {
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 5px;
+    opacity: 95%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+
+  /* footer */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    width:100%;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  footer .col {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  footer .col {
+    text-align: center;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+
+  h5 {
+    margin-left: 17px;
+  }
+
+  .d-flex {
+    margin-left: 17px;
+  }
 
   
