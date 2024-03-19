@@ -244,7 +244,7 @@ body {
   }
  
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 576px) {
   .nav-item.dropdown {
     margin-left: 10px;
   }

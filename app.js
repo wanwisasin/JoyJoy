@@ -28,6 +28,42 @@ app.get('/boardgamePage',(req,res) => {
 app.get('/ToyCarPage',(req,res) => {
     res.render('ToyCarPage');
 })
+app.get('/NewArrPage',(req,res) => {
+    res.render('NewArrPage');
+})
+app.get('/BestSellers',(req,res) => {
+    res.render('BestSellers');
+})
+app.get('/UpcomPage',(req,res) => {
+    res.render('UpcomPage');
+})
+app.get('/OnlyJoyPage',(req,res) => {
+    res.render('OnlyJoyPage');
+})
+app.get('/brandBanpresto',(req,res) => {
+    res.render('brandBanpresto');
+})
+app.get('/brandCare',(req,res) => {
+    res.render('brandCare');
+})
+app.get('/brandLego',(req,res) => {
+    res.render('brandLego');
+})
+app.get('/SaleBoard',(req,res) => {
+    res.render('SaleBoard');
+})
+app.get('/SaleFigure',(req,res) => {
+    res.render('SaleFigure');
+})
+app.get('/SaleLEGO',(req,res) => {
+    res.render('SaleLEGO');
+})
+app.get('/SalePlush',(req,res) => {
+    res.render('SalePlush');
+})
+app.get('/Saletoycar',(req,res) => {
+    res.render('Saletoycar');
+})
 
 app.listen(port, () => {
     console.log(`Server is running on Port ${port}.`);
