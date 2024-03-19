@@ -21,10 +21,10 @@
                     <tr>
                        <th scope="row"><%= product.product_id %></th>
                        <td><%= product.product_name %></td>
-                       <td><img src="assets/img/<%= product.product_img %>" class="rounded-circle product-img"/></td>
+                       <td><img src="backend/assets/img/<%= product.product_img %>" class="rounded-circle product-img"/></td>
                        <td><%= product.product_des %></td>
                        <td><%= product.product_price %></td>
-                       <td><%= product.product_quanlity %></td> <!-- แก้จาก product.product_quanlity เป็น product.product_quantity -->
+                       <td><%= product.product_quanlity %></td> 
                        <td><%= product.category_id %></td>
                        <td>
                         <a href="/edit/products/<%= product.product_id %>"  class="btn-sm btn-success">Edit</a>

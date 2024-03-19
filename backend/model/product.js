@@ -50,7 +50,7 @@ module.exports = {
                 // check the filetype before uploading it
                 if (uploadedFile.mimetype === 'image/png' || uploadedFile.mimetype === 'image/jpeg') {
                     // upload the file to the /public/assets/img directory
-                    uploadedFile.mv(`public/assets/img/`+image_name, (err ) => {
+                    uploadedFile.mv(`backend/public/assets/img/`+image_name, (err ) => {
                         if (err) {
                             return res.status(500).send(err);
                         }
@@ -119,7 +119,7 @@ module.exports = {
 
             let image = result[0].product_img; // Updated column name
 
-            fs.unlink(`public/assets/img/`+image, (err) => {
+            fs.unlink(`backend/public/assets/img/`+image, (err) => {
                 if (err) {
                     return res.status(500).send(err);
                 }
