@@ -5,6 +5,7 @@ const path = require('path');
 const db = require('./config/db');
 
 
+const {getCategoryPage,addCategoryPage , addCategory,deleteCategory,editCategory,editCategoryPage } = require('./backend/model/category');
 
 const {getProductPage,addProductPage , addProduct,deleteProduct,editProduct,editProductPage } = require('./backend/model/product');
 
@@ -33,7 +34,13 @@ app.get('/delete/products/:id',deleteProduct);
 app.post('/add/products',addProduct);
 app.post('/edit/products/:id',editProduct);
 
-
+//categorise
+app.get('/categoryPage', getCategoryPage);
+app.get('/add/categories',addCategoryPage);
+app.get('/edit/categories/:id',editCategoryPage);
+app.get('/delete/categories/:id',deleteCategory);
+app.post('/add/categories',addCategory);
+app.post('/edit/categories/:id',editCategory);
 
 app.listen(port, () => {
     console.log(`Server running on port: ${port}`);
