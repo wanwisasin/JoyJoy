@@ -69,6 +69,16 @@ body {
     transform: scale(0.9);
     color: #E07A5F; 
   }
+  
+  /*slide*/
+  .carousel-item {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    position: absolute;
+  }
+  .carousel-item.active {
+      opacity: 1;
+  }
 
   /*categiroes*/
   nav.categiroes div {
