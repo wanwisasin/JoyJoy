@@ -1,0 +1,232 @@
+/* font */
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .navbar,
+  .navbar-nav,
+  .navbar-toggler-icon,
+  .nav-link,
+  .form-control,
+  .btn,
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon,
+  h3,
+  .boxback,
+  .white-box,
+  footer,
+  ul,
+  li,
+  i {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* navbar */
+  #shop{
+      columns:2;
+      width: auto;
+  }
+  i#icon{
+      font-size: 22px; /* ขนาดไอคอน */
+      margin: 12px; /* ระยะห่างระหว่างไอคอน */
+  }
+  body {
+      background-color: #ffffff;
+      color: #333;
+      font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+    }
+    .col p {
+      margin-left: 10px;
+    }
+    .flex_item {
+      flex: auto;
+      margin: 0 10px; 
+    }
+    .nar-logo {
+      margin-right: 20px; 
+    }
+    .nav-item:not(:first-child) {
+      margin-left: 20px; 
+    }
+    body .navbar.navbar-expand-lg.bg-body-tertiary {
+      background-color: #f2cc8f37 !important; 
+    }
+
+
+    /* footer */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  footer .col {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  footer .col {
+    text-align: center;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+
+  h5 {
+    margin-left: 17px;
+  }
+
+  .d-flex {
+    margin-left: 17px;
+  }
+  
+  section.footer {
+    background-color: #ffffff;
+  }
+
+  /*MY PURCHASE*/
+  .box-bag {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .col1, .col2 {
+    width: 50%; 
+  }
+  /*ข้อความ ซ้ายขวา*/
+  .center-text {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 5px solid black;
+    padding-bottom: 5px; /* เพื่อให้เส้นตรงไม่ใกล้กับข้อความมากเกินไป */
+  }
+  .center-text1 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px; /* เพื่อให้เส้นตรงไม่ใกล้กับข้อความมากเกินไป */
+  }
+  .text {
+    margin: 60px;
+  }
+
+  .detail-product {
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 50px;
+  }
+  .box-product{
+    width: 180px;
+    height: auto;
+    border-radius: 10%;
+  }
+  .box-product img {
+    margin-left: 10px;
+  }
+
+  .box-detail {
+    display: inline;
+    margin-top: 20px;
+  }
+  .buyquantity {
+    width: 120px;
+    height: 40px;
+    left: 60px;
+    border-radius: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #7E7E7E;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 20px; /* ระยะห่างซ้ายของ buyquantity */
+    margin-bottom: 10px;
+}
+.delete{
+    margin-top: 55px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+  .billtotal {
+    display: flex;
+    margin: 60px;
+}
+.total-1 {
+    flex: 1;
+    margin-right: 10px; /* เพื่อให้มีระยะห่างระหว่างกล่อง */
+}
+.text-2 {
+    padding: 10px;
+}
+
+.empty{
+    height: 500px;
+}
+
+
+@media only screen and (max-width: 576px) {
+    /* ส่วนของ CSS ที่คุณต้องการปรับเป็น mobile size ให้เพิ่มที่นี่ */
+    body {
+        font-size: 12px; /* ลดขนาดตัวอักษรให้เหมาะสมกับอุปกรณ์ mobile */
+    }
+
+    .navbar {
+        flex-direction: column; /* ให้เรียงแนวตั้งบนอุปกรณ์ mobile */
+    }
+
+    .nav-item {
+        margin-left: 0; /* ลบระยะห่างซ้ายของแต่ละ nav item บนอุปกรณ์ mobile */
+    }
+
+    .navbar-toggler {
+        margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่างของ navbar toggler บนอุปกรณ์ mobile */
+    }
+
+    .box-bag {
+        flex-direction: column; /* ให้เรียงแนวตั้งบนอุปกรณ์ mobile */
+        margin: 10px; /* ลดระยะห่างรอบๆ box-bag บนอุปกรณ์ mobile */
+    }
+
+    .col1, .col2 {
+        width: 50%; /* กำหนดความกว้างให้เต็มขอบบนอุปกรณ์ mobile */
+    }
+
+    .center-text, .center-text1 {
+        border-bottom: none; /* ลบเส้นใต้ข้อความใน mobile */
+        text-align: left; /* จัดข้อความชิดซ้ายบนอุปกรณ์ mobile */
+        padding-bottom: 0; /* ลบความสูงของพื้นที่ที่ไม่จำเป็นใต้ข้อความ */
+        margin-left: 0; /* ลบระยะห่างซ้ายของข้อความบนอุปกรณ์ mobile */
+        margin-right: 0; /* ลบระยะห่างขวาของข้อความบนอุปกรณ์ mobile */
+    }
+
+    .detail-product {
+        flex-direction: column; /* ให้เรียงแนวตั้งบนอุปกรณ์ mobile */
+        margin: 10px; /* ลดระยะห่างรอบๆ detail-product บนอุปกรณ์ mobile */
+    }
+
+    .buyquantity, .delete {
+        margin-left: 0; /* ลบระยะห่างซ้ายของ buyquantity และ delete บนอุปกรณ์ mobile */
+        margin-top: 20px; /* ปรับระยะห่างด้านบนของ buyquantity และ delete บนอุปกรณ์ mobile */
+    }
+}
