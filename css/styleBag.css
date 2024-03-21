@@ -20,6 +20,11 @@ body {
   i {
     font-family: 'Montserrat', sans-serif;
   }
+  h3{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 36px;
+  }
   
   /* navbar */
   #shop{
@@ -103,35 +108,45 @@ body {
   section.footer {
     background-color: #ffffff;
   }
+  
 
   /*MY PURCHASE*/
   .box-bag {
     width: 100%;
     height: auto;
     display: flex;
+    margin-top: 20px;
   }
   .col1, .col2 {
     width: 50%; 
   }
   /*ข้อความ ซ้ายขวา*/
   .center-text {
-    text-align: center;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-size: 30px;
+    text-align: center;
     border-bottom: 5px solid black;
     padding-bottom: 5px; /* เพื่อให้เส้นตรงไม่ใกล้กับข้อความมากเกินไป */
   }
   .center-text1 {
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: bold; */
+    font-size: 30px;
     text-align: center;
     border-bottom: 2px solid black;
     padding-bottom: 5px; /* เพื่อให้เส้นตรงไม่ใกล้กับข้อความมากเกินไป */
   }
   .text {
     margin: 60px;
+    font-family: 'Montserrat', sans-serif;
+    
   }
 
   .detail-product {
     display: flex;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(227, 223, 223);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin: 50px;
   }
   .box-product{
@@ -140,12 +155,14 @@ body {
     border-radius: 10%;
   }
   .box-product img {
-    margin-left: 10px;
+    margin: 10px;
   }
 
   .box-detail {
     display: inline;
     margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
   }
   .buyquantity {
     width: 120px;
@@ -171,6 +188,7 @@ body {
   .billtotal {
     display: flex;
     margin: 60px;
+    font-family: 'Montserrat', sans-serif;
 }
 .total-1 {
     flex: 1;
@@ -186,47 +204,73 @@ body {
 
 
 @media only screen and (max-width: 576px) {
-    /* ส่วนของ CSS ที่คุณต้องการปรับเป็น mobile size ให้เพิ่มที่นี่ */
-    body {
-        font-size: 12px; /* ลดขนาดตัวอักษรให้เหมาะสมกับอุปกรณ์ mobile */
-    }
+  /* font */
+  body {
+    font-size: 14px; /* ปรับขนาดตัวอักษรให้เหมาะสมกับอุปกรณ์เล็ก */
+  }
+  
+  h3 {
+    margin-left: 10px; /* ปรับขนาดของหัวเรื่องให้เหมาะสมกับอุปกรณ์เล็ก */
+  }
 
-    .navbar {
-        flex-direction: column; /* ให้เรียงแนวตั้งบนอุปกรณ์ mobile */
-    }
+  .flex_item {
+    margin: 0; /* ลบระยะห่างระหว่างคอลัมน์ในโหมด mobile */
+  }
 
-    .nav-item {
-        margin-left: 0; /* ลบระยะห่างซ้ายของแต่ละ nav item บนอุปกรณ์ mobile */
-    }
+  .nar-logo {
+    margin-right: 10px; /* ปรับระยะห่างของโลโก้ให้เหมาะสมกับอุปกรณ์เล็ก */
+  }
 
-    .navbar-toggler {
-        margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่างของ navbar toggler บนอุปกรณ์ mobile */
-    }
+  .nav-item:not(:first-child) {
+    margin-left: 10px; /* ปรับระยะห่างของเมนูให้เหมาะสมกับอุปกรณ์เล็ก */
+  }
 
-    .box-bag {
-        flex-direction: column; /* ให้เรียงแนวตั้งบนอุปกรณ์ mobile */
-        margin: 10px; /* ลดระยะห่างรอบๆ box-bag บนอุปกรณ์ mobile */
-    }
+  .text {
+    margin: 20px;
+  }
 
-    .col1, .col2 {
-        width: 50%; /* กำหนดความกว้างให้เต็มขอบบนอุปกรณ์ mobile */
-    }
+  .detail-product {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    border: 1px solid rgb(227, 223, 223);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .box-product{
+    width: 180px;
+    height: auto;
+    border-radius: 10%;
+  }
 
-    .center-text, .center-text1 {
-        border-bottom: none; /* ลบเส้นใต้ข้อความใน mobile */
-        text-align: left; /* จัดข้อความชิดซ้ายบนอุปกรณ์ mobile */
-        padding-bottom: 0; /* ลบความสูงของพื้นที่ที่ไม่จำเป็นใต้ข้อความ */
-        margin-left: 0; /* ลบระยะห่างซ้ายของข้อความบนอุปกรณ์ mobile */
-        margin-right: 0; /* ลบระยะห่างขวาของข้อความบนอุปกรณ์ mobile */
-    }
+  .box-product img {
+    margin: 10px;
+  }
 
-    .detail-product {
-        flex-direction: column; /* ให้เรียงแนวตั้งบนอุปกรณ์ mobile */
-        margin: 10px; /* ลดระยะห่างรอบๆ detail-product บนอุปกรณ์ mobile */
-    }
+  /*MY PURCHASE*/
+  .box-detail {
+    margin: 10px; /* ปรับระยะห่างของกล่องรายละเอียดสินค้าให้เหมาะสมกับอุปกรณ์เล็ก */
+    display: flex;
+  }
 
-    .buyquantity, .delete {
-        margin-left: 0; /* ลบระยะห่างซ้ายของ buyquantity และ delete บนอุปกรณ์ mobile */
-        margin-top: 20px; /* ปรับระยะห่างด้านบนของ buyquantity และ delete บนอุปกรณ์ mobile */
-    }
+  .buyquantity {
+    margin: 10px;
+  }
+
+  .delete {
+    margin-top: 20px; /* ปรับระยะห่างของปุ่มลบสินค้าให้เหมาะสมกับอุปกรณ์เล็ก */
+    margin-left: 0; /* ลบระยะห่างซ้ายของปุ่มลบ เพื่อให้เต็มจอ */
+  }
+
+  .billtotal {
+    margin: 20px; /* ปรับระยะห่างของกล่องรวมราคารวมให้เหมาะสมกับอุปกรณ์เล็ก */
+  }
+
+  .total-1 {
+    margin-right: 0; /* ลบระยะห่างขวาของกล่องรายการให้เต็มจอ */
+  }
+
+  .empty {
+    height: 300px; /* ปรับความสูงของหน้าที่ไม่มีรายการให้เหมาะสมกับขนาดของเนื้อหา */
+  }
 }
